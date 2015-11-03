@@ -3,6 +3,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	position: fixed;
 	
 	
 
@@ -12,4 +13,13 @@
 #heading{
 
 	color: #9E9D24;
+}
+.container-fluid .jumbotron{
+	border-radius: 0px;
+
+
+}
+.mpesa{
+
+	height: 360px;
 }
