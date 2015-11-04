@@ -3,10 +3,10 @@ $(document).ready(function()
 		$("h1").mouseenter(function()
 		{
 			// $(this).fadeToggle(1000).fadeIn();
-			$(this).slideUp().slideDown();
+			// $(this).slideUp().slideDown();
 
 
-		});
+		 });
 
 		$("#project1 h5").hide();
 
@@ -32,6 +32,48 @@ $(document).ready(function()
 				$(".container h2").css("color", "#1565C0")
 
 			});
-		
+
+		$("#contact-form").on("submit",function(e)
+		{
+			url = '/';
+
+			data = $(this).serialize();
+
+			console.log(data);
+
+			$.post(url, data)
+			
+
+			// prevents the default behaviour of the form
+			e.preventDefault();
+		});
+
+		// validating my form user inputs.
+		$("#contact-form").validate(
+			{
+				rules: {
+					fullname: {
+						required: true,
+						minlength: 2
+					},
+					email: {
+						required: true,
+						email: true
+					}
+
+				},
+				messages:{
+
+					fullname: "Please enter your full Names",
+					email: {
+						required: "email cannot be empty",
+						email: "Please use the format name@domain.com"
+
+					}
+
+				}
+
+
+			});
 		
 	});

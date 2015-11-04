@@ -1,7 +1,7 @@
 
 <!DOCTYPE <!DOCTYPE html>
-  <html lang="en">
-    	<head>
+<html lang="en">
+  <head>
     		<meta charset="utf-8">
     		<meta name="viewport" content="width=device-width">
     		<title>Introduction to Bootstrap</title>
@@ -9,10 +9,41 @@
     		<link rel="stylesheet" type="text/css" href="main.css">
     	</head>
     	<body>
+            <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img class="logo img-responsive" src="images/logo.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects completed<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">world bank app</a></li>
+                    <li><a href="#">Mpesa website</a></li>
+                    <li><a href="#">New OLX app</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
             <div class="container-fluid">
+
               <section class= "row text-center jumbotron" id="pitch">
+
                   <h1 id="heading">Welcome to the FUTURE of programming</h1>
-                  <a href="#works" class="btn btn-primary btn-lg btn-danger">Checkout my projects</a> 
+                  
               </section>
             </div> 
             <div class="container">
@@ -32,12 +63,49 @@
                   <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
                 </div>
               </section>
+               
+            </div> 
+            <div class="container">
+            
+              <section class="row">
+                <div id="project1" class="col-sm-4 col-lg-4 ">
+                  <img src="images/worldbank.jpg" class="img-responsive" alt="world bank app">
+                  <h5>I provide graphic design in both mobile and desktops systems.I serve clientele from all parts of the world.Click the details button to view more.</h5>
+                  <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
+                </div>
+                <div class="col-sm-4 col-lg-4 ">
+                  <img src="images/olx-mobile.jpg" class="img-responsive" alt="new olx app">
+                  <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
+                </div>
+                <div class="col-sm-4 col-lg-4 ">
+                  <img width="360px" src="images/mpesa.jpg" class="img-responsive" alt="mpesa website">
+                  <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
+                </div>
+              </section><br>
+              <footer class="row">
+              <div class="col-sm-4"></div>
+              <form class="col-sm-4" id="contact-form" action="/" method="post">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="name@domain.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputfullname">Full Name</label>
+                    <input type="text" name="fullname" class="form-control" id="examplefullname" placeholder="Full Name">
+                  </div>                 
+                  <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+
+              <div class="col-sm-4"></div>
+
+              </footer>
             </div>
 
     				<script src="jQuery-1.11.3.js"></script>
+            <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
             <script src="jquerywork.js"></script>
     				<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
-    	</body>
-  </html>																														
+    </body>
+</html>																														
 
 

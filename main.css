@@ -1,15 +1,12 @@
 #pitch{
-	background-image: url('images/vector2.jpg'); 
+	background-image: url('images/vector2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	height: 400px;
+	margin-top: 0px;
 	
-
-	
-	
-
-
 }
 
 #heading{
@@ -28,4 +25,17 @@
 h2{
 	color: #1565C0;
 
+}
+.logo{
+	height: 50px;
+    padding-bottom: 20px;
+
+}
+body{
+	/*background-image: url(images/binary.jpg);*/
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
