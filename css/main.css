@@ -6,7 +6,7 @@
 	background-attachment: fixed;
 	height: 400px;
 	margin-top: 0px;
-	padding: 100px;
+	padding: 150px;
 	
 	
 
@@ -73,7 +73,7 @@ body{
 
 }
 #cover1{
-background-image: url("../images/prog-languages.png");
+background-color: #DCE775;
 
 }
 #tab{
@@ -85,9 +85,25 @@ h1{
 	outline-color: #5E35B1;
 }
 .pd{
-font-size: 80px;
+font-size: 50px;
 text-align: center;
 text-decoration: style;
 
+
+}
+#language{
+	font-size: 50px;
+
+}
+#myprof{
+	font-size: 50px;
+
+}
+#tabs-1{
+	background-color: #DCE775;
+
+}
+.footnote{
+	color: red;
 
 }
