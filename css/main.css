@@ -4,7 +4,7 @@
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	height: 400px;
+	height: 200px;
 	margin-top: 0px;
 	width: inherit;
 	
@@ -58,11 +58,11 @@ body{
 
 }
 #contacts img{
-	height: 200px;
+	
 
 }
 #phonenumber{
-	height: 230px;
+	
 
 
 };
