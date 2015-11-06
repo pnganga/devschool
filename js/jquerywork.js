@@ -85,6 +85,8 @@ $(document).ready(function()
 
              $( "#accordion1" ).accordion();
  
-		
+			$( "#tabs" ).tabs({
+		      event: "mouseover"
+		    });
 		
 	});
