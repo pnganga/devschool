@@ -1,5 +1,5 @@
 #pitch{
-	background-image: url('images/bck.jpg');
+	background-image: url("../images/vector2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -35,8 +35,8 @@ h2{
 
 }
 body{
-	background-color: #FCE4EC;
-	
+	background-color: #ffffff;
+	/*background-image: url("../images/bck.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -54,9 +54,24 @@ body{
 }
 #contacts{
 	height: 100px;
+	display: block;
 
 }
 #contacts img{
-	height: 100px;
+	height: 200px;
+
+}
+#phonenumber{
+	height: 230px;
+
+
+};
+.row{
+	border-style: double;
+	border-color: #Ffffff;
+
+}
+#cover1{
+background-image: url("../images/prog-languages.png");
 
 }
