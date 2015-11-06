@@ -4,12 +4,13 @@
   <head>
     		<meta charset="utf-8">
     		<meta name="viewport" content="width=device-width">
-    		<title>Introduction to Bootstrap</title>
+    		<title>Pius nganga portfolio</title>
     		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
-    		<link rel="stylesheet" type="text/css" href="main.css">
+    		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     	</head>
     	<body>
-            <nav class="navbar navbar-inverse navbar-static-top">
+            <nav class="navbar navbar-inverse navbar-static-top col-sm-12 col-lg-12 ">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -18,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img class="logo img-responsive" src="images/logo.png"></a>
+                <!--<a class="navbar-brand" href="#"><h3 class="myName">PIUS NGANGA</h3>...>-->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -46,12 +47,11 @@
                   
               </section>
             </div> 
-            <div class="container">
+            <div class="container-fluid">
             <strong><h2 class="text-center">PROJECTS COMPLETED</h2></strong>
               <section class="row">
                 <div id="project1" class="col-sm-4 col-lg-4 ">
                   <img src="images/worldbank.jpg" class="img-responsive" alt="world bank app">
-                  <h5>I provide graphic design in both mobile and desktops systems.I serve clientele from all parts of the world.Click the details button to view more.</h5>
                   <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
                 </div>
                 <div class="col-sm-4 col-lg-4 ">
@@ -65,27 +65,47 @@
               </section>
                
             </div> 
-            <div class="container">
             
-              <section class="row">
-                <div id="project1" class="col-sm-4 col-lg-4 ">
-                  <img src="images/worldbank.jpg" class="img-responsive" alt="world bank app">
-                  <h5>I provide graphic design in both mobile and desktops systems.I serve clientele from all parts of the world.Click the details button to view more.</h5>
-                  <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
-                </div>
-                <div class="col-sm-4 col-lg-4 ">
-                  <img src="images/olx-mobile.jpg" class="img-responsive" alt="new olx app">
-                  <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
-                </div>
-                <div class="col-sm-4 col-lg-4 ">
-                  <img width="360px" src="images/mpesa.jpg" class="img-responsive" alt="mpesa website">
-                  <a href="#" class="btn btn-sm btn-primary">DETAILS</a>
-                </div>
-              </section><br>
-              <footer class="row">
-              <div class="col-sm-4"></div>
-              <form class="col-sm-4" id="contact-form" action="/" method="post">
+            <br><br>
+            <strong><h2 id="h2cntcts">CONTACTS</h2></strong>
+            <div class="row" id="contacts">
+              <div class="col-sm-2" >
+
+                <a class="btn btn-primary btn-lg"  target="_blank" href="https://www.facebook.com/swizngash" >
+
+                  <img class="img-responsive" src="images/facebook.png" alt="like us on facebook">
+
+                </a>
+
+
+              </div>
+              <div class="col-sm-2">
+                <a class="btn btn-primary btn-lg"  target="_blank" href="https://www.twitter.com/Swizzngash" >
+
+                  <img class="img-responsive" src="images/twitter.png" alt="follow us on twitter">
+
+                </a>
+              </div>
+              <div class="col-sm-2">
+                <a class="btn btn-primary btn-lg"  target="_blank" href="https://www.linkedin.com/pius nganga" >
+
+                  <img class="img-responsive" src="images/linkedin.png" alt="I am on linkedin">
+
+                </a>
+
+
+              </div>
+              <div class="col-sm-2">
+                 <a class="btn btn-primary btn-lg"  target="_blank" href="https://www.gmail.com/pnganga05" >
+
+                  <img class="img-responsive" src="images/google plus.png" alt="Am on google plus">
+
+                </a>
+
+              </div>
+              <form class="col-sm-4 col-lg-4" id="contact-form" action="/" method="post">
                   <div class="form-group">
+                  <strong><h5>leave your contacts below for a free estimation</h5></strong>
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="name@domain.com">
                   </div>
@@ -95,15 +115,12 @@
                   </div>                 
                   <button type="submit" class="btn btn-default">Submit</button>
               </form>
-
-              <div class="col-sm-4"></div>
-
-              </footer>
             </div>
-
-    				<script src="jQuery-1.11.3.js"></script>
-            <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-            <script src="jquerywork.js"></script>
+              <div class="row col-sm-6">
+    				<script src="js/jQuery-1.11.3.js"></script>
+            <script src="js/jquery_validation.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script src="js/jquerywork.js"></script>
     				<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
     </body>
 </html>																														
