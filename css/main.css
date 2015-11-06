@@ -1,12 +1,13 @@
 #pitch{
 	background-image: url("../images/vector2.jpg");
-	background-repeat: no-repeat;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	height: 200px;
+	height: 400px;
 	margin-top: 0px;
-	width: inherit;
+	padding: 100px;
+	
 	
 
 	
@@ -73,5 +74,20 @@ body{
 }
 #cover1{
 background-image: url("../images/prog-languages.png");
+
+}
+#tab{
+	height: 300px;
+
+}
+h1{
+	font-family:  Serif,sans-serif;
+	outline-color: #5E35B1;
+}
+.pd{
+font-size: 80px;
+text-align: center;
+text-decoration: style;
+
 
 }
