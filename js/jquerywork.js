@@ -59,7 +59,8 @@ $(document).ready(function()
 					email: {
 						required: true,
 						email: true
-					}
+					},
+
 
 				},
 				messages:{
@@ -88,5 +89,38 @@ $(document).ready(function()
 			$( "#tabs" ).tabs({
 		      event: "mouseover"
 		    });
-		
+
+
+			githubReposUrl =  "https://api.github.com/users/pnganga/repos";
+
+			$.get(githubReposUrl, function(repositories){
+				// parse data object
+				projectListTemplate = '';
+				projectListTemplate += '<ul>';
+
+				repositories.forEach(function(repository){
+					projectListTemplate += '<li>';
+					projectListTemplate += '<h2><a target="_blank" href="'+repository.owner.html_url+'">'+repository.name+'</a></h2>';
+					projectListTemplate += '<p>'+repository.description+'</p>';
+					projectListTemplate += '<a href="'+repository.contributors_url+'">Teams working on project</a>';
+					projectListTemplate += '</li>';
+
+
+				});
+				projectListTemplate += '</ul>';
+				
+				// projectListTemplate = '<ul>'
+				// 							+ '<li>'
+				// 								+ '<h2><a href="#">Introduction to bootstrap</a></h2>'
+				// 								+ '<p>My project description</p>'
+				// 								+ '<a href="#">Teams working on project</a>'
+				// 							+ '</li>'
+				// 					   + '</ul>';
+
+
+			    
+		    	$("#open-source-content").html(projectListTemplate);
+
+		    });
+			
 	});
