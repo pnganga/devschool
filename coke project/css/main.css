@@ -17,14 +17,19 @@
 }
 
 #st{
-	background-image: url("../images/dr-pepper.jpg");
+	background-color: red;
 
 }
 #nd{
-	background-image: url("../images/dr-pepper.jpg");
+	background-color: blue;
+
 
 }
 #rd{
-	background-image: url("../images/dr-pepper.jpg");
+	background-color: yellow;
+}
+#head{
 
+	outline-color: blue;
+	color: #EA80FC;
 }
