@@ -72,3 +72,16 @@ require('./models/movie.js'); /// This imports a module from a folder within you
 ```
 
 -------------------------------------------------------------------------------------
+3.starting a node project
+```
+npm init  //run this in the terminal within your app directory.
+
+
+``````
+----------------------------------
+4.adding a module to your project using npm
+````
+npm install --save <module_name>//run this in the terminal within your app directory
+
+
+```

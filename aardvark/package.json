@@ -11,5 +11,8 @@
     "'imdb'"
   ],
   "author": "'pnganga'",
-  "license": "'MIT'"
+  "license": "'MIT'",
+  "dependencies": {
+    "dispatch": "^1.0.0"
+  }
 }
