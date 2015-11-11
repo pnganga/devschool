@@ -300,12 +300,18 @@
 
                 <h1 class="text-center">Cars profile</h1>
                   <div class="col-sm-12" ng-controller="myCars">
+                    <label for="search">SEARCH</label>
+                    <input type="text" ng-model="test" placeholder="What are you looking for?">
+
+
+
                     <table align="center" border="1" width="80%">
-                      <tr ng-repeat="x in cars">
-                        <td>{{x.brand}}</td>
-                        <td>{{x.model}}</td>
-                        <td>{{x.type}}</td>
-                        <td>{{x.year}}</td>
+                      <tr ng-repeat="x in cars | filter:test">
+                        <td class="text-center">{{x.brand}}</td>
+                        <td class="text-center">{{x.model}}</td>
+                        <td class="text-center">{{x.type}}</td>
+                        <td class="text-center">{{x.year}}</td>
+                        <td width="150"><img class="img-responsive" width="150" height="152" ng-src="{{x.image}}"/></td>
 
                       </tr>
                       
