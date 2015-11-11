@@ -1,6 +1,6 @@
 
 <!DOCTYPE <!DOCTYPE html>
-<html ng-app lang="en">
+<html ng-app="myApp" lang="en">
   <head>
     		<meta charset="utf-8">
     		<meta name="viewport" content="width=device-width initial-scale=1.0">
@@ -9,6 +9,7 @@
     		<link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
         <script src="js/angularjs.js"></script>
+        <script src="js/appcontroller.js"></script>
     	</head>
     	<body>
           <nav class="navbar navbar-inverse navbar-static-top col-sm-12 col-lg-12 col-md-12 ">
@@ -252,7 +253,13 @@
 
                 <section class="row" id="angulartest">
                   <h1 class="text-center">Simple Data Binding</h1>
-                  <div class="col-sm-4">
+                  <div class="col-sm-4 " ng-controller="myCtrl" ng-init = "num1=45;num2=56;">
+
+                  <p>Sum is: {{num1 * num2}}</p>
+
+                  <h6>my Phone {{phone}}</h6>
+                  <h6>my City {{city}}</h6>
+                  <h6>my County {{county}}</h6>
                     
 
                   </div>
@@ -289,20 +296,43 @@
 
 
                 </section>
+                <section class="row">
+
+                <h1 class="text-center">Cars profile</h1>
+                  <div class="col-sm-12" ng-controller="myCars">
+                    <table align="center" border="1" width="80%">
+                      <tr ng-repeat="x in cars">
+                        <td>{{x.brand}}</td>
+                        <td>{{x.model}}</td>
+                        <td>{{x.type}}</td>
+                        <td>{{x.year}}</td>
+
+                      </tr>
+                      
+
+
+                    </table>
+
+
+                  </div>
+
+
+
+                </section>
             
                 <footer class="row" id="foot"> 
-                <p class="footnote text-center">(C) Pius Nganga 2015<br>All rights reserved</p>
+                  <p class="footnote text-center">(C) Pius Nganga 2015<br>All rights reserved</p>
 
 
 
                 </footer>
               </div>
-            </section>
+            
               
 
               
            
-          </div> 
+          
          
     	<script src="js/jQuery-1.11.3.js"></script>
       <script src="js/jquery_validation.js"></script>
