@@ -1,6 +1,6 @@
 
 <!DOCTYPE <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp" lang="en">
   <head>
     		<meta charset="utf-8">
     		<meta name="viewport" content="width=device-width initial-scale=1.0">
@@ -8,6 +8,8 @@
     		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
     		<link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        <script src="js/angularjs.js"></script>
+        <script src="js/appcontroller.js"></script>
     	</head>
     	<body>
           <nav class="navbar navbar-inverse navbar-static-top col-sm-12 col-lg-12 col-md-12 ">
@@ -70,8 +72,10 @@
           
             </div>
             </section>
-            <strong><h2 class="pd" "text-center">PROJECTS COMPLETED</h2></strong>
+            <br><br><br>
           <section class="row" id="projects">
+            <strong><h2 class="pd" "text-center">PROJECTS COMPLETED</h2></strong>
+
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -89,7 +93,7 @@
                 </div>
               </div>
               <div class="item">
-                <img class="center-block" src="../images/highlight.jpg" alt="highlight app">
+                <img  class="center-block" src="../images/highlight.jpg" alt="highlight app">
                 <div class="carousel-caption">
                       
                 </div>
@@ -246,20 +250,90 @@
 
 
                 </section>
+
+                <section class="row" id="angulartest">
+                  <h1 class="text-center">Simple Data Binding</h1>
+                  <div class="col-sm-4 " ng-controller="myCtrl" ng-init = "num1=45;num2=56;">
+
+                  <p>Sum is: {{num1 * num2}}</p>
+
+                  <h6>my Phone {{phone}}</h6>
+                  <h6>my City {{city}}</h6>
+                  <h6>my County {{county}}</h6>
+                    
+
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="askInput">USERNAME</label>
+                    <input type="text" ng-model="userName" placeholder="Enter Username Here"/>
+                    <h2 ng-bind="userName"></h2>
+
+                    <h1>Simple interest Calculator</h1>
+                    <label for="askInput"> Amount</label>
+
+                    <input type="number" ng-model="principal" placeholder="Enter your Amount"/><br>
+                    <p>Your amount is: {{principal}}</p>
+
+                    <label for="askInput"> Rate</label>
+
+                    <input type="number" ng-model="rate" placeholder="Enter Rate"/><br>
+                    <p>Your Rate is: {{rate}}</p>
+
+                    <label for="askInput"> Period</label>
+
+                    <input type="number" ng-model="period" placeholder="Enter Time"/><br>
+                    <p>Your payment period is: {{period}}</p><br>
+
+                    <h3>Your SI is: {{principal*rate* period}}</h3>
+
+                  </div>
+                  <div class="col-sm-4">
+                    
+
+                  </div>
+                  
+
+
+
+                </section>
+                <section class="row">
+
+                <h1 class="text-center">Cars profile</h1>
+                  <div class="col-sm-12" ng-controller="myCars">
+                    <table align="center" border="1" width="80%">
+                      <tr ng-repeat="x in cars">
+                        <td>{{x.brand}}</td>
+                        <td>{{x.model}}</td>
+                        <td>{{x.type}}</td>
+                        <td>{{x.year}}</td>
+
+                      </tr>
+                      
+
+
+                    </table>
+
+
+                  </div>
+
+
+
+                </section>
             
                 <footer class="row" id="foot"> 
-                <p class="footnote text-center">(C) Pius Nganga 2015<br>All rights reserved</p>
+                  <p class="footnote text-center">(C) Pius Nganga 2015<br>All rights reserved</p>
 
 
 
                 </footer>
               </div>
-            </section>
+            
               
 
               
            
-          </div>    
+          
+         
     	<script src="js/jQuery-1.11.3.js"></script>
       <script src="js/jquery_validation.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>

@@ -1,5 +1,5 @@
 #pitch{
-	background-image: url("../images/vector2.jpg");
+	background-image: url("../aimages/vector2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -36,7 +36,7 @@ h2{
 
 }
 body{
-	background-color: #ffffff;
+	background-color: #E3F2FD;
 	/*background-image: url("../images/bck.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -73,7 +73,7 @@ body{
 
 }
 #cover1{
-background-color: #DCE775;
+
 
 }
 #tab{
@@ -100,7 +100,7 @@ text-decoration: style;
 
 }
 #tabs-1{
-	background-color: #DCE775;
+	
 
 }
 .footnote{
