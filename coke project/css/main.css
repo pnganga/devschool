@@ -1,0 +1,35 @@
+
+#pitch{
+	background-image: url("../images/new3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 400px;
+	margin-top: 0px;
+	padding: 150px;
+
+}
+.navbar{
+	position: fixed;
+
+
+}
+
+#st{
+	background-color: red;
+
+}
+#nd{
+	background-color: blue;
+
+
+}
+#rd{
+	background-color: yellow;
+}
+#head{
+
+	outline-color: blue;
+	color: #EA80FC;
+}
