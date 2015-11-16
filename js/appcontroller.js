@@ -25,3 +25,18 @@ myApp.controller('myCars', function($scope){
 
 
 });
+
+myApp.controller('blogs',function($scope,$http){
+
+	var url = "http://jsonplaceholder.typicode.com/comments?postId=1";
+
+	$http.get(url).success(function(response){
+		$scope.posts = response;
+
+	});
+
+
+
+
+
+});
