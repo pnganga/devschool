@@ -250,51 +250,6 @@
 
                 </section>
 
-                <section class="row" id="angulartest">
-                  <h1 class="text-center">Simple Data Binding</h1>
-                  <div class="col-sm-4 " ng-controller="myCtrl" ng-init = "num1=45;num2=56;">
-
-                  <p>Sum is: {{num1 * num2}}</p>
-
-                  <h6>my Phone {{phone}}</h6>
-                  <h6>my City {{city}}</h6>
-                  <h6>my County {{county}}</h6>
-                    
-
-                  </div>
-                  <div class="col-sm-4">
-                    <label for="askInput">USERNAME</label>
-                    <input type="text" ng-model="userName" placeholder="Enter Username Here"/>
-                    <h2 ng-bind="userName"></h2>
-
-                    <h1>Simple interest Calculator</h1>
-                    <label for="askInput"> Amount</label>
-
-                    <input type="number" ng-model="principal" placeholder="Enter your Amount"/><br>
-                    <p>Your amount is: {{principal}}</p>
-
-                    <label for="askInput"> Rate</label>
-
-                    <input type="number" ng-model="rate" placeholder="Enter Rate"/><br>
-                    <p>Your Rate is: {{rate}}</p>
-
-                    <label for="askInput"> Period</label>
-
-                    <input type="number" ng-model="period" placeholder="Enter Time"/><br>
-                    <p>Your payment period is: {{period}}</p><br>
-
-                    <h3>Your SI is: {{principal*rate* period}}</h3>
-
-                  </div>
-                  <div class="col-sm-4">
-                    
-
-                  </div>
-                  
-
-
-
-                </section>
                 <section class="row">
 
                 <h1 class="text-center">Cars profile</h1>
@@ -305,6 +260,11 @@
 
 
                     <table align="center" border="1" width="80%">
+                      <th class="text-center">VEHICLE BRAND</th>
+                      <th class="text-center">MODEL</th>
+                      <th class="text-center">TYPE</th>
+                      <th class="text-center">YEAR OF MANUFACTURE</th>
+                      <th class="text-center">PHOTO</th>
                       <tr ng-repeat="x in cars | filter:test">
                         <td class="text-center">{{x.brand}}</td>
                         <td class="text-center">{{x.model}}</td>
@@ -324,6 +284,12 @@
 
 
                 </section>
+<<<<<<< HEAD:introduction_to_bootstrap/index.html
+                <section class="row">
+                  <div class="col-sm-6"></div>
+                  <div id="pgh" class="page-header col-sm-6">
+                    <h1>Angular JS Form</h1>
+=======
                 <section>
                   <div class="page-header">
                     <h1>Angular JS Form</h1>
@@ -383,18 +349,59 @@
             
                 <footer class="row" id="foot"> 
                   <p class="footnote text-center">(C) Pius Nganga 2015<br>All rights reserved</p>
+>>>>>>> 6654af6e6edb3d932833977e0a48de6d34044f1c:index.html
+
+                  </div>
+                  </section>
+                  <section class="row">
+                  <div class="col-sm-6" ng-controller="customersCtrl">
+                      <ul>
+                        <li ng-repeat="x in movies">
+                          {{ x.Name + ', ' + x.Country }}
+                        </li>
+                      </ul>
 
 
 
-                </footer>
-              </div>
+                  </div>
+                  <div class="col-sm-6" ng-controller="userController">
+                    <form id="form" name="userForm" ng-submit="formSubmit()" novalidate>
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" ng-model="user.useremail" class="form-control" placeholder="enter your email here" required=""/>
+                        <span ng-show="userForm.email.$error.required"></span>
+                        <span id="red" ng-show="userForm.email.$error.email">Enter a valid email</span>
+                      </div>
+                      <div class="form-group">
+                        <label>select A Movie Category</label>
+                        <select ng-model="user.category" class="form-control" placeholder="category">
+                          <option>Comedy</option>
+                          <option>Horror</option>
+                          <option>Action</option>
+                          <option>Thriller</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Payment Mode</label>
+                        <input type="radio" ng-model="user.mode" name="mode" value="Cheque" class="form-control"/>Cheque
+                        <input type="radio" ng-model="user.mode" name="mode" value="Cash" class="form-control"/>Cash
+                        <input type="radio" ng-model="user.mode" name="mode" value="Mpesa" class="form-control"/>Mpesa
+                      </div>
+                      <div class="form-group">
+                        <label>select date</label>
+                        <input type="date" name="date" ng-model="user.date" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Send request</button>
+                      </div>
+                    </form>
+                  </div>
+                </section>
             
-              
-
-              
-           
-          
-         
+                <footer class="row" id="foot"> 
+                  <p class="footnote text-center">(C) Pius Nganga 2015<br>All rights reserved</p>
+                </footer>
+              </div>        
     	<script src="js/jQuery-1.11.3.js"></script>
       <script src="js/jquery_validation.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
